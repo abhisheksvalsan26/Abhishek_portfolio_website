@@ -160,7 +160,7 @@ p{margin:0}
 .shots-stack img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
 .shots-stack img + img{width:88%;justify-self:end;margin-top:-34px;box-shadow:0 -12px 30px rgba(4,12,9,.55)}
 .case-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.case-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.case-row{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
 .case-card{display:flex;flex-direction:column;text-align:left;background:transparent;border:1px solid var(--line);border-radius:20px;padding:28px;min-height:300px;transition:border-color .25s,background .25s}
 .case-card:hover{border-color:var(--sage);background:rgba(239,234,223,.025)}
 .case-card h3{margin-top:8px}
@@ -492,13 +492,25 @@ dialog[open]{animation:pop .3s cubic-bezier(.2,.7,.2,1)}
         </div>
       </article>
 
-      <div class="case-row">
-        <button class="case-card" data-case="himmath">
-          <span class="case-meta">Gold bullion dealer, Dubai Gold Souk. 2026</span>
+      <article class="case-feature spaced">
+        <div class="shots-stack">
+          <img src="img/himmath-search-console.jpg" alt="Google Search Console performance for himmathgold.com over 3 months: 1.51K clicks, 150K impressions, 1% CTR, average position 10.9" width="1535" height="536" loading="lazy">
+          <img src="img/himmath-site.jpg" alt="Himmath Gold homepage: Dubai Gold Souk specialist gold and silver bullion dealer" width="764" height="460" loading="lazy">
+        </div>
+        <div class="case-body">
+          <p class="case-meta">Gold bullion dealer, Dubai Gold Souk. SEO, 2026</p>
           <h3>Himmath Gold</h3>
-          <span class="case-outcome">End-to-end SEO: audit, keyword strategy, on-page and off-page</span>
-          <span class="more">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </button>
+          <p class="case-outcome">150K Google impressions and 1.5K clicks in 3 months</p>
+          <p class="desc">End-to-end SEO for a bullion dealer competing for high-value searches like gold bars, PAMP bars and gold coins in Dubai: audit, keyword strategy, on-page and off-page work. The numbers come straight from Google Search Console.</p>
+          <ul class="tags"><li>Website audit</li><li>Keyword research</li><li>On-page SEO</li><li>Off-page SEO</li><li>Rank tracking</li></ul>
+          <div class="case-links">
+            <button class="btn btn-ghost" data-case="himmath">See the Search Console results</button>
+            <a class="btn btn-ghost" href="https://himmathgold.com/" target="_blank" rel="noopener">Visit the site</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="case-row">
         <button class="case-card" data-case="kasavu">
           <span class="case-meta">Handloom e-commerce, Kerala. 2025 to now</span>
           <h3>KasavuMaalika.com</h3>
@@ -589,6 +601,7 @@ dialog[open]{animation:pop .3s cubic-bezier(.2,.7,.2,1)}
               <li>Ran a full website audit and competitor analysis against other gold and bullion dealers in Dubai.</li>
               <li>Researched and planned keywords around buyer searches for gold bars, PAMP bars, gold coins and gold jewellery, and tracked rankings over time.</li>
               <li>Handled on-page SEO across the site's pages, plus off-page SEO and backlink creation to build authority.</li>
+              <li>Site earned 150K Google impressions and 1.51K clicks over three months (Search Console, Jul to Oct 2026).</li>
             </ul>
           </div>
         </li>
@@ -783,14 +796,18 @@ dialog[open]{animation:pop .3s cubic-bezier(.2,.7,.2,1)}
       tags:['Instagram audit','Brand positioning','Content pillars','Content calendar','6-month roadmap','GMB optimisation','Lead funnel']
     },
     himmath: {
-      title:'Himmath Gold', meta:'Gold bullion dealer, Dubai Gold Souk. 2026',
-      outcome:'End-to-end SEO: audit, keyword strategy, on-page and off-page',
-      localShots:[['img/himmath-site.jpg','Himmath Gold homepage: Dubai Gold Souk specialist gold and silver bullion dealer']],
+      title:'Himmath Gold', meta:'Gold bullion dealer, Dubai Gold Souk. SEO, 2026',
+      outcome:'150K Google impressions and 1.5K clicks in 3 months',
+      stack:true,
+      localShots:[
+        ['img/himmath-search-console.jpg','Google Search Console performance for himmathgold.com, 3 months','Google Search Console, 28 Jul to 27 Oct 2026: 1.51K clicks, 150K impressions, 1% CTR and an average position of 10.9.'],
+        ['img/himmath-site.jpg','Himmath Gold homepage','The himmathgold.com homepage.']
+      ],
       link:['https://himmathgold.com/','Visit himmathgold.com'],
       problem:'A gold and silver bullion dealer in Dubai Gold Souk competing online for high-value searches like gold bars, PAMP bars and gold coins, against long-established dealers in the same market.',
       strategy:'Start from a full website audit and competitor analysis, then build a keyword plan around buyer-intent searches for bullion, coins and gold jewellery in Dubai.',
       execution:'Keyword research and planning, on-page SEO across the site, off-page SEO with backlink creation, and ongoing keyword rank tracking.',
-      result:'A full SEO foundation in place: an audited site, a keyword plan, optimised pages and new backlinks, with rankings tracked over time.',
+      result:'Over three months (28 Jul to 27 Oct 2026) the site earned 1.51K clicks and 150K impressions from Google Search, with a 1% click-through rate and an average position of 10.9.',
       tags:['Website audit','Competitor analysis','Keyword research','Keyword planning','On-page SEO','Off-page SEO','Backlinks','Rank tracking']
     },
     aibi: {
