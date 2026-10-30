@@ -160,7 +160,7 @@ p{margin:0}
 .shots-stack img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
 .shots-stack img + img{width:88%;justify-self:end;margin-top:-34px;box-shadow:0 -12px 30px rgba(4,12,9,.55)}
 .case-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.case-row{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+.case-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
 .case-card{display:flex;flex-direction:column;text-align:left;background:transparent;border:1px solid var(--line);border-radius:20px;padding:28px;min-height:300px;transition:border-color .25s,background .25s}
 .case-card:hover{border-color:var(--sage);background:rgba(239,234,223,.025)}
 .case-card h3{margin-top:8px}
@@ -277,6 +277,11 @@ dialog[open]{animation:pop .3s cubic-bezier(.2,.7,.2,1)}
 .dlg-shots.wide img{aspect-ratio:auto;height:auto}
 .dlg-shots.wide.single{grid-template-columns:1fr}
 .dlg-shots.wide.three img:first-child{grid-column:1/-1}
+.dlg-shots.stack{grid-template-columns:1fr;gap:22px}
+.dlg-shots figure{margin:0}
+.dlg-shots figure a{display:block}
+.dlg-shots figcaption{margin-top:10px;font-size:14px;color:var(--sage)}
+.dlg-shots figcaption a{color:var(--bone);text-underline-offset:3px;white-space:nowrap}
 .dlg-link{margin-top:24px}
 .dlg-sections{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
 .dlg-sections section{border:1px solid var(--line);border-radius:18px;padding:22px}
@@ -470,17 +475,28 @@ dialog[open]{animation:pop .3s cubic-bezier(.2,.7,.2,1)}
         </div>
       </article>
 
+      <article class="case-feature alt">
+        <div class="shots-stack">
+          <img src="img/aibi-campaigns.jpg" alt="Meta Ads Manager campaign table for AIBI Campus, 1 Apr to 29 Oct 2026: lead-form and WhatsApp campaigns with results, cost per result, spend, impressions and reach" width="1600" height="748" loading="lazy">
+          <img src="img/aibi-whatsapp.jpg" alt="Meta Ads Manager performance overview: 53 WhatsApp conversations started at ₹248.33 each, ₹13,161.70 spent" width="1288" height="604" loading="lazy">
+        </div>
+        <div class="case-body">
+          <p class="case-meta">Education, India. Meta Ads, Apr to Oct 2026</p>
+          <h3>AIBI Campus</h3>
+          <p class="case-outcome">508 form leads at ₹132 average cost per lead</p>
+          <p class="desc">Ran Meta Ads lead generation for an education brand across Kerala: lead-form and WhatsApp campaigns with tight audience segmentation and creative testing. The screenshots come straight from Meta Ads Manager.</p>
+          <ul class="tags"><li>Meta Ads</li><li>Lead forms</li><li>WhatsApp campaigns</li><li>Audience segmentation</li><li>Creative testing</li></ul>
+          <div class="case-links">
+            <button class="btn btn-ghost" data-case="aibi">See the Ads Manager results</button>
+          </div>
+        </div>
+      </article>
+
       <div class="case-row">
         <button class="case-card" data-case="himmath">
           <span class="case-meta">Gold bullion dealer, Dubai Gold Souk. 2026</span>
           <h3>Himmath Gold</h3>
           <span class="case-outcome">End-to-end SEO: audit, keyword strategy, on-page and off-page</span>
-          <span class="more">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </button>
-        <button class="case-card" data-case="aibi">
-          <span class="case-meta">Education, India. 2025 to 2026</span>
-          <h3>AIBI Campus</h3>
-          <span class="case-outcome">₹84.74 average cost per lead</span>
           <span class="more">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </button>
         <button class="case-card" data-case="kasavu">
@@ -778,13 +794,19 @@ dialog[open]{animation:pop .3s cubic-bezier(.2,.7,.2,1)}
       tags:['Website audit','Competitor analysis','Keyword research','Keyword planning','On-page SEO','Off-page SEO','Backlinks','Rank tracking']
     },
     aibi: {
-      title:'AIBI Campus', meta:'Education, India. 2025 to 2026',
-      outcome:'₹84.74 average cost per lead',
-      problem:'Cost per lead on Meta Ads was high and audience targeting was too broad.',
-      strategy:'Campaigns built on competitor analysis, with precise interest-based targeting.',
-      execution:'Meta Ads management with custom audience segmentation and structured creative testing.',
-      result:'High-intent leads at an average cost of ₹84.74 per lead during the testing phase.',
-      tags:['Meta Ads','Lead generation','Audience segmentation','Creative testing']
+      title:'AIBI Campus', meta:'Education, India. Meta Ads, Apr to Oct 2026',
+      outcome:'508 form leads at ₹132 average cost per lead',
+      stack:true,
+      localShots:[
+        ['img/aibi-campaigns.jpg','Meta Ads Manager campaign table for AIBI Campus, 1 Apr to 29 Oct 2026','Campaign results, 1 Apr to 29 Oct 2026: lead-form and WhatsApp campaigns with cost per result, spend, impressions and reach.'],
+        ['img/aibi-whatsapp.jpg','Performance overview of a WhatsApp campaign: 53 conversations at ₹248.33 each','WhatsApp campaign: 53 messaging conversations started, ₹13,161.70 spent.'],
+        ['img/aibi-leadform.jpg','Performance overview of a lead-form campaign: 49 leads at ₹207.10 each','Lead-form campaign, 29 Sep to 28 Oct 2026: 49 leads at ₹207.10 each, ₹10,147.83 spent.']
+      ],
+      problem:'Cost per lead on Meta Ads was high and audience targeting was too broad for an education brand recruiting students across Kerala.',
+      strategy:'Split spend between instant lead forms and click-to-WhatsApp campaigns, with campaigns built on competitor analysis and precise interest-based targeting.',
+      execution:'End-to-end Meta Ads management: custom audience segmentation, separate Kerala and placement campaigns, and structured creative testing to find the highest-return ads.',
+      result:'Across the four lead-form campaigns shown, 508 leads at an average ₹131.59 per lead, with the best campaign at ₹96.32. Five WhatsApp campaigns started 242 conversations at an average ₹144.80. During the testing phase, cost per lead reached ₹84.74.',
+      tags:['Meta Ads','Lead forms','WhatsApp campaigns','Audience segmentation','Creative testing']
     },
     peely: {
       title:'Peely Digital Media', meta:'Print and custom gifting shop, Kerala. 2026',
@@ -916,7 +938,7 @@ dialog[open]{animation:pop .3s cubic-bezier(.2,.7,.2,1)}
     $('#dlg-title').textContent = c.title;
     $('#dlg-meta').textContent = c.meta;
     let shots = c.shots ? `<div class="dlg-shots">${c.shots.map((file, i) => `<img src="${file}" alt="Instagram post ${i + 1} for ${esc(c.title)}" loading="lazy">`).join('')}</div>` : '';
-    if (c.localShots) shots = `<div class="dlg-shots wide${c.localShots.length === 1 ? ' single' : ''}${c.localShots.length === 3 ? ' three' : ''}">${c.localShots.map(([src, alt]) => `<img src="${src}" alt="${esc(alt)}">`).join('')}</div>`;
+    if (c.localShots) shots = `<div class="dlg-shots wide${c.stack ? ' stack' : c.localShots.length === 1 ? ' single' : c.localShots.length === 3 ? ' three' : ''}">${c.localShots.map(([src, alt, cap]) => cap ? `<figure><a href="${src}" target="_blank" rel="noopener" title="Open full size"><img src="${src}" alt="${esc(alt)}"></a><figcaption>${esc(cap)} <a href="${src}" target="_blank" rel="noopener">Open full size</a></figcaption></figure>` : `<img src="${src}" alt="${esc(alt)}">`).join('')}</div>`;
     const link = c.link ? `<p class="dlg-link"><a class="btn btn-ghost" href="${c.link[0]}" target="_blank" rel="noopener">${esc(c.link[1])}</a></p>` : '';
     const block = (h, t) => `<section><h4>${h}</h4><p>${esc(t)}</p></section>`;
     $('#dlg-body').innerHTML = `
