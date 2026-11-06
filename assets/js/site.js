@@ -61,16 +61,17 @@
     },
     peely: {
       title: 'Peely Digital Media', meta: 'Print and gifting shop, Kerala. 2026',
-      outcome: 'Google Business Profile rebuilt for local search, rated 5.0',
+      outcome: 'On the first page of Google for print shops in Thuruthipuram',
       shots: [
+        ['img/peely-local-search.jpg', 'Google local results for print shop in Thuruthipuram Kerala', 'Google local results for "print shop in thuruthipuram kerala": Peely Digital Media shows on the first page, rated 5.0.'],
         ['img/peely-profile.jpg', 'Peely Digital Media Google Business Profile', 'The live Google Business Profile: rated 5.0 from 4 Google reviews.'],
         ['img/peely-posts.jpg', 'Google Posts from the Peely Digital Media profile', 'Keyword led Google Posts, each ending in a Call now button.']
       ],
       link: ['https://share.google/4axIgrkwm0UhnlmM0', 'See the live profile on Google'],
-      problem: 'A print and gifting shop with more than 15 years of local trade needed to show up when people in Thuruthipuram and North Paravur search Google for printing, banners and wedding cards.',
+      problem: 'An established print and gifting shop needed to show up when people in Thuruthipuram and North Paravur search Google for printing, banners and wedding cards.',
       strategy: 'Build the profile around the service and place searches locals actually make: flex banners, visiting cards, wedding cards, custom trophies and corporate gifts, paired with Thuruthipuram and North Paravur.',
       execution: 'Rewrote the business description around those keywords and set up a steady rhythm of Google Posts. Category, phone, hours and map location are complete, so the profile qualifies for map results.',
-      result: 'A verified profile rated 5.0 from 4 Google reviews, with 6 keyword led posts published in under two weeks to keep it active in local results.',
+      result: 'The shop now appears on the first page of Google\'s local results for "print shop in thuruthipuram kerala", rated 5.0 from 4 Google reviews. Six keyword led posts in under two weeks keep the profile active.',
       tags: ['Local SEO', 'Google Business Profile', 'Google Posts', 'Keyword research', 'Copywriting']
     },
     aqiq: {
