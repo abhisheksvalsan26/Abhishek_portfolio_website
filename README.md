@@ -1,30 +1,37 @@
-# Abhishek S Valsan — Portfolio
+# Abhishek S Valsan, portfolio
 
-Personal portfolio of Abhishek S Valsan, digital marketer working across Meta Ads, SEO, conversion rate optimisation and short-form video.
+Portfolio of Abhishek S Valsan, digital marketer for Meta Ads, SEO and short form video.
 
 **Live site:** https://abhisheksvalsanportfolio.netlify.app/
 
-## What's inside
-
-- Case studies: Bang Bang Burger, Peely Digital Media, Aqiq Architecture, Himmath Gold, AIBI Campus, KasavuMaalika and Anad.ae
-- Showreel with brand reels and AI ad films that play directly on the page
-- Experience timeline, skills and contact details
-
-## Project structure
+## Structure
 
 ```
-index.html      The whole site: markup, styles and scripts in one file
-img/            Case study screenshots
-media/          Videos (.mp4), posters (.jpg) and playlist thumbnails (-thumb.jpg)
+index.html          Home page: hero, benefits, process, case studies, showreel, experience, FAQ, contact
+privacy.html        Privacy page
+terms.html          Terms page
+404.html            Branded not found page (Netlify serves it automatically)
+favicon.svg         Site icon
+assets/css/site.css Design system and all styles
+assets/js/site.js   Behaviour, plus the case study (CASES) and video (VIDEOS) content
+assets/fonts/       Geist (self hosted) and a trimmed Phosphor icon font
+assets/og.png       Social sharing image
+img/                Case study screenshots
+media/              Videos, posters and playlist thumbnails
 ```
 
-It is a static site with no build step. Open `index.html` in a browser to preview it locally.
+Static site, no build step. Open `index.html` in a browser to preview.
 
 ## Editing
 
-- **Videos:** add `media/<key>.mp4`, `media/<key>.jpg` and `media/<key>-thumb.jpg`, then add an entry to the `VIDEOS` list near the bottom of `index.html`.
-- **Case studies:** the popup text lives in the `CASES` object near the bottom of `index.html`; the cards are in the `#work` section.
+- **Case study popups:** edit the `CASES` object in `assets/js/site.js`.
+- **Videos:** add `media/<key>.mp4`, `media/<key>.jpg` and `media/<key>-thumb.jpg`, then add an entry to `VIDEOS` in `assets/js/site.js`.
+- **New icons:** the icon font is trimmed to the icons in use. Add the icon's class to `site.css` and re-subset `Phosphor.woff2` from `@phosphor-icons/web`.
+
+## Design rules
+
+Built to a fixed visual system: Geist only, Tailwind type scale with named text styles (`heading-1`, `body-3`, `caption-2` and so on), spacing tokens from 2px to 96px, Tailwind radii, flat dark backgrounds, Phosphor icons, and one motion curve, `cubic-bezier(0.22,1,0.36,1)`.
 
 ## Deploying
 
-Any static host works. On Netlify, link this repository to the site with no build command and publish directory `/`; every push to `main` deploys automatically.
+Netlify publishes the `main` branch automatically on every push.
