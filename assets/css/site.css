@@ -6,6 +6,7 @@
 @font-face{font-family:"Geist";src:url("../fonts/Geist-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Geist";src:url("../fonts/Geist-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
 @font-face{font-family:"Geist";src:url("../fonts/Geist-SemiBold.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Geist";src:url("../fonts/Geist-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
 @font-face{font-family:"Phosphor";src:url("../fonts/Phosphor.woff2") format("woff2");font-weight:normal;font-style:normal;font-display:block}
 
 :root{
@@ -75,6 +76,10 @@ p,li,dd,figcaption,summary{text-wrap:pretty}
   .lg\:heading-1{font-size:3.75rem;line-height:3.75rem;font-weight:600;letter-spacing:-0.025em}
   .lg\:heading-2{font-size:3rem;line-height:3rem;font-weight:600;letter-spacing:-0.025em}
   .lg\:heading-3{font-size:2.25rem;line-height:2.5rem;font-weight:600;letter-spacing:-0.02em}
+  .lg\:display-2{font-size:4.5rem;line-height:4.5rem}
+}
+@media (min-width:1280px){
+  .xl\:display-1{font-size:6rem;line-height:6rem}
 }
 .muted{color:var(--text-2)}
 .faint{color:var(--text-3)}
@@ -155,10 +160,10 @@ p,li,dd,figcaption,summary{text-wrap:pretty}
 /* ---------- hero (B5) ---------- */
 .hero{padding-top:var(--s-900);padding-bottom:var(--s-700)}
 @media (min-width:1024px){.hero{margin-top:var(--s-700)}}
-.hero-copy{max-width:680px;display:grid;gap:var(--s-300);justify-items:start}
+.hero-copy{display:grid;gap:var(--s-300);justify-items:start}
 .badge{display:inline-flex;align-items:center;gap:var(--s-75);padding:var(--s-50) var(--s-100);border:1px solid var(--line-2);border-radius:var(--r-full);background:var(--surface)}
 .dot{width:var(--s-75);height:var(--s-75);border-radius:var(--r-full);background:var(--ok)}
-.hero-title{max-width:680px;padding-bottom:var(--s-50);background:linear-gradient(90deg,#FFFFFF 0%,#9B9B9B 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-title{font-weight:700;letter-spacing:-0.045em;padding-bottom:var(--s-75);background:linear-gradient(90deg,#FFFFFF 0%,#9B9B9B 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-sub{max-width:680px}
 .proof-row{display:grid;gap:var(--s-75);margin-top:var(--s-200)}
 .brands{display:flex;flex-wrap:wrap;gap:var(--s-75) var(--s-300)}
